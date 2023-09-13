@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="kali.png">
+	<title>WEBPAGE NI ROWEL</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background: url(990411.jpg) no-repeat fixed;
+			background-size: cover;
+			margin: 0;
+		}
+		.top-container {
+			padding: 10px;
+		}
+		.text1 {
+			margin:140px 140px;
+			font-size: 35px;
+			font-family: Blacklisted;
+			text-shadow: 2px 2px #000000
+		}
+		.text2 {
+			margin: 114px 114px;
+			font-size:35px;
+			font-family: Blacklisted;
+			text-shadow: 2px 2px #000000
+		}
+		.ewan{
+			margin: 66px 66px;
+		}
+		#footer {
+			margin-left: 5px;
+			float: left;
+			font-weight: lighter;
+		}
+		#footer1 {
+			margin-right: 25px;
+			float: right;
+    		font-weight: lighter;
+    	}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+		}
+		.sidenav a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 40px;
+			color: #818181;
+			display: block;
+			transition: 0.4s;
+		}
+		.sidenav a:hover {
+			color: #f1f1f1;
+		}
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 86px;
+			margin-left: 50px;
+		}
+		#main {
+			transition: margin-left .5s;
+			padding: 16px;
+		}
+		@media screen and (max-height: 450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 68px;}
+		}
+		.column {
+			float: left;
+	    	width: 50%;
+	    	padding: 10px;
+	    	height: 100px;
+		}
+		.row:after {
+			clear: both;
+		}
+	    .a {
+	    	margin-top: 5%;
+	    	margin: 10%;
+	    }
+	    .b {
+	    	margin-top: 5%;
+	    	margin: 10%;
+	    }
+		.songname {
+			color: white;
+			text-decoration: none;
+			text-shadow: 2px 2px #000000
+		}
+		.lyriccontent {
+			animation: FadeEffect 1s;
+			text-shadow: 2px 2px #000000;
+			color: white;
+			font-size: 40px;
+			float: right;
+		}
+		.tab {
+			overflow: hidden;
+			background-color: #f1f1f1;
+			opacity: 50%;
+			
+		}
+		.tab button {
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: 2px;
+			cursor: pointer;
+			padding: 40px 101px;
+			transition: 0.3s;
+			font-size: 35px;
+			font-family: Blacklisted;
+			color: black;
+		}
+
+		.tab button:hover {
+			background-color: silver;
+		}
+
+		.tab button.active {
+			background-color: gray;
+		}
+
+		.tabcontent {
+			animation: fadeEffect .6s;
+			text-shadow: 4px 4px #000000;
+			color: white;
+			margin-left: 80px;
+			margin-right: 80px;
+
+		}
+
+		@keyframes fadeEffect {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+		.hey1 {
+			color:white;
+			font-size: 60px;
+			font-weight: 700;
+			letter-spacing: 10px;
+			margin-bottom: 20px;
+			position: relative;
+			animation: text 3s 1;
+		}
+
+		.hey2 {
+			font-size: 30px;
+			color: white;
+			animation: text 3s 1;
+		}
+		@keyframes text {
+			0%{
+				color: black;
+				margin-bottom: -40px;
+			}
+			30%{
+				letter-spacing: 25px;
+				margin-bottom: -40px;
+			}
+			85%{
+				letter-spacing: 8px;
+				margin-bottom: -40px;
+			}
+		}
+	}
+
+	</style>
+</head>
+<body>
+
+<div class="top-container"></div>
+
+<div class="tab">
+	<button class="tablinks" onclick="openCity(event, 'HOME')" id="defaultOpen">HOME</button>
+	<button class="tablinks" onclick="openCity(event, 'INTRODUCTION')">INTRODUCTION</button>
+	<button class="tablinks" onclick="openCity(event, 'INFO')">INFO</button>
+	<button class="tablinks" onclick="openCity(event, 'FAVORITE SONGS')">FAVORITE SONGS</button>
+	<button class="tablinks" onclick="openCity(event, 'GAMES')"><a href="Games.html" style="text-decoration: none; color:black">GAMES</a></button>
+	<button class="tablinks" onclick="openCity(event, 'ACCOUNTS')">ACCOUNTS</button>
+	<button class="tablinks" onclick="openCity(event, 'HOBBIES')">HOBBIES</button>
+	<button class="tablinks" onclick="openCity(event, 'GOALS')">GOALS</button>
+</div>
+
+<div id="main">
+	<span style="font-size: 45px;cursor:pointer;font-family: Europhonic" onclick="openNav()">&#9776; Options</span>
+
+<div id="HOME" class="tabcontent">
+	<h3 class="hey1" align="center" style="font-family: Blacklisted; font-size: 120px;letter-spacing: 9px;"><br>Welcome<hr width="45%"></h3>
+	<p class="hey2" align="center" style="font-family: Europhonic; font-size: 70px; letter-spacing: 7px">This  is  my  first  Webpage<br>About  Me</p>
+</div>
+
+<div id="INFO" style="font-size: 43px" class="tabcontent">
+	<img class="row" class="column" class="b" align="right" src="alvero.jpg" width="250" style="margin-right: 200px">
+	<div style="font-family: TW Cen MT; text-shadow: 2.5px 2.5px #000000; margin-left: 50px">
+	<h2 class="row" class="column" class="a" style="font-family: Blacklisted;font-size: 50px">BASIC INFORMATION</h2>
+		<p><b>Name: Rowel B. Alvero Jr.<br>
+		Address: </b>Blk 58 Lot 3 Carpa st. Lower tawi-tawi, Pangarap Village, Caloocan City, Philippines<br>
+		<b>Contact No: </b><br>
+		<b>Email Address: </b></p>
+		<br>
+		<hr width="100%" />
+		<h3 style="font-family: Blacklisted; text-shadow: 3px 3px #000000; font-size: 50px"><b>PERSONAL INFORMATION</b><hr align=left width=0></h3>
+		<p><b>Nationality: </b>Filipino<br>
+		<b>Civil Status: </b>Single<br>
+		<b>Birthday: </b>December 11 2002<br>
+		<b>Religion: </b>Christian</p>
+		<hr width="100%" />
+		<h3 style="font-family: Blacklisted; text-shadow: 3px 3px #000000; font-size: 50px"><b>Educational Background</b><br><hr align=left width=0></h3>
+		<p><b>Primary: </b><br>Pangarap Elementary School (2009 - 2015)<br>
+		<b>Secondary: </b><br>Pangarap High School (2015 - 2019)<br>Lagro High School (2019 - Current Time)</p></p>
+		<h3 style="font-family: Blacklisted; text-shadow: 3px 3px #000000; font-size: 50px"><b>Character References</b><br></h3>
+		<p><b>*</b> Eat<br>
+		<b>*</b> Sleep<br>
+		<b>*</b> Game<br>
+		<b>*</b> Code<br>
+		<b>*</b> Repeat</p>
+		<hr>
+       <div id="footer">Copyright &copy; 2019 ROWEL ALVERO</div>
+       <div id="footer1">&trade; ROWELL			
+       </div>
+	</div>
+</div>
+
+<div id="GAMES" class="tabcontent" align="center">
+	<a href="Games.html"><img src="tensai.gif"></a>
+<div style="text-align:center;font-size: 70px; font-family: rowland">Click this cute Waifu to Redirect</a>
+</div>
+</div>
+
+<div id="ACCOUNTS" class="tabcontent" align="center">
+	<img src="under-construction.jpg">
+	<h3 style="text-align: center; font-family: lato; font-size: 50px">Keep away ma'am, we're under construction</h3>
+	<p></p>
+</div>
+
+<div id="HOBBIES" class="tabcontent" align="center">
+	<img src="thumb_3.png" width="15%">
+	<h3 style="text-align: center; font-family: lato; font-size: 50px">Sorry for inconveniece ma'am, still working</h3>
+	<p></p>
+</div>
+
+<div id="INTRODUCTION" class="tabcontent" align="center" style="font-size: 55px; margin-left: 10%;margin-right: 10%; font-family: TW Cen MT">
+	<h1 class="hey1" style="font-family: Blacklisted; font-size: 150px" align="center">INTRODUCTION<hr width="65%"></h1>
+	<p style="font-family: lato; font-size: 50px">Hi I am Rowel! Currently on Grade 11 ICT Programming - A / Zuckerberg and this is my first website, its about me and where I am interested :))</p>
+	<br>
+	<p style="font-family: lato; font-size: 50px">I like Lumpiang Shanghai and Chocolate<br>Watching movies and Playing games is my way to escape the cruel world.</p>
+	<br>
+	<p style="font-family: lato; font-size: 50px">I'm 17 years old and was born on December 11 2002 at Tondo, Manila</p>
+	<br>
+	<p style="font-family: lato; font-size: 50px">And WELCOME TO MY WEBSITE.</p>
+</div>
+
+<div id="FAVORITE SONGS" class="tabcontent">
+
+	<h2 class="hey1" style="font-family: Blacklisted; font-size: 85px" align="center">Here's my Playlist<hr width="40%"></h2>
+
+<div class="row">
+	<div class="column" style="font-family: Europhonic; font-size: 60px">
+		<ul class="a" style="list-style-type: circle;color: black">
+			<li><a href="#" class="songname">Paramore - Last Hope</a></li>
+			<li><a href="#" class="songname">Paramore - Caught in the middle</a></li>
+			<li><a href="#" class="songname">The Script - The man who can't be move</a></li>
+			<li><a href="#" class="songname">FM Static - Tonight</a></li>
+			<li><a href="#" class="songname">The Red Jumpsuit Appparatus - Your Guardian Angel</a></li>
+			<li><a href="#" class="songname">Megan Trainor - Like I'm Gonna Lose You</a></li>
+			<li><a href="#" class="songname">Ed Sheeran - How would you feel</a></li>
+			<li><a href="#" class="songname">Ed Sheeran - Photograph</a></li>
+			<li><a href="#" class="songname">Air Supply - Two Less Lonely People</a></li>
+			<li><a href="#" class="songname">This band - Ligaya ?</a></li>
+			<li><a href="#" class="songname">Orange and Lemons - Hanggang Kaylan</a></li>
+			<li><a href="#" class="songname">Cueshe - Ulan</a></li>
+			<li><a href="#" class="songname">Spongecola - Jeepney</a></li>
+			<li><a href="#" class="songname">Green Day - Wake me up when september ends</a></li>
+			<li><a href="#" class="songname">One Direction - Night Changes</a></li>
+			<li><a href="#" class="songname">Eric Clapton - Wonderfull tonight</a></li>
+			<li><a href="#" class="songname">The Bread - Aubrey</a></li>
+			<li><a href="#" class="songname">The Bread - If</a></li>
+			<li><a href="#" class="songname">Bruno Mars - When I was your Man</a></li>
+			<li><a href="#" class="songname">Taylor swift - Everything has changed</a></li>
+			<li><a href="#" class="songname">Taylor swift - Lover</a></li>
+			<li><a href="#" class="songname">The foundation - Build me up</a></li>
+			<li><a href="#" class="songname">Katy Perry - The one that got away</a></li>
+		</ul>
+	</div>
+
+	<div class="column" style="font-family: Europhonic; font-size: 60px">
+		<ul class="b" style="list-style-type: circle;">
+			<li><a href="My Chemical Romance - Helena.mp3" class="songname">My Chemical Romance - Helena</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - Disenchanted</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - I don't Love You</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - The End.</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - Welcome to the Black Parade</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - Famous Last Words</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - Cancer</a></li>
+			<li><a href="#" class="songname">My Chemical Romance - Teenager</a></li>
+			<li><a href="#" class="songname">The Vamps - Somebody to you</a></li>
+			<li><a href="#" class="songname">Lukas Graham - Love Someone</a></li>
+			<li><a href="#" class="songname">Maroon5 - Girls like you</a></li>
+			<li><a href="#" class="songname">Maroon5 - Memories</a></li>
+			<li><a href="#" class="songname">Queen - Somebody to love</a></li>
+			<li><a href="#" class="songname">Queen - Bohemian Rhapsody</a></li>
+			<li><a href="#" class="songname">Queen - Radio Ga Ga</a></li>
+			<li><a href="#" class="songname">Queen - Don't stop me now</a></li>
+			<li><a href="#" class="songname">Queen - Love Of My Life</a></li>
+			<li><a href="#" class="songname">Paramore - The only exception</a></li>
+			<li><a href="#" class="songname">Paramore - Playing God</a></li>
+			<li><a href="#" class="songname">Paramore - Still in to you</a></li>
+			<li><a href="#" class="songname">Paramore - Let the Flames begin</a></li>
+			<li><a href="#" class="songname">Paramore - Rose-colored boy</a></li>
+			<li><a href="#" class="songname">Linkin Park - in the end</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div id="GOALS" class="tabcontent">
+	<h3 class="hey1" style="font-family: Blacklisted; font-size: 80px" align="center">My dream PC Parts<hr width="70%"></h3>
+	<p align="center"> 
+		<br>
+		<br>
+        <a class="ewan"><img src="container/rtxx.jpg" width="430" alt="rtx"></a>
+        <a class="ewan"><img src="container/ryzen.jpg" width="540" alt="ryzen"></a>
+        <a class="ewan"><img src="container/i9.jpg" width="530" height="500" alt="i9"> </a>
+        <a class="ewan"><img src="container/ram.jpg" width="530" height="500" alt="ram"> </a>
+        <a class="text2" style="margin-left: 80px">GeForce RTX 2080</a>
+        <a class="text2">This boi is a budget meal Ryzen</a>
+        <a class="text2">Marvelous Intel Core I9</a>
+        <a class="text2">Tridentz 3800mhz DDR4 RAM</a>         
+        </p>
+        <br>
+        <br>
+        <p align="center"> 
+        <a class="ewan"><img src="container/mortar.jpg" width="430" height="320" alt="mobo"></a>
+        <a class="ewan"><img src="container/1060.jpg" width="540" alt="gpu"></a>
+        <a class="ewan"><img src="container/psu.jpg" width="530" height="500" alt="psu"> </a>
+        <a class="ewan"><img src="container/hdd.jpg" width="530" height="500" alt="hdd"> </a>
+        <a class="text1" style="margin-left: 75px">MSI B450M Mortar</a>
+        <a class="text1">Nvidia GeForce GTX 1060</a>
+        <a class="text1">Corsair SF 600 80plus</a>
+        <a class="text1">SeaGate Barracuda 5TB</a>
+    </p>
+    <br>
+        <hr>
+        <br>
+        <div align="center">
+        <p style="font-family: Blacklisted; font-size: 70px;">MY DREAM BADBOI</p>
+        <img src="badboi.jpg" alt="PC">
+        <p style="float: right; text-align: left; font-size: 60px; margin-right: 15%; font-family: Europhonic">| CPU: Intel Core i9-9900K <br>| GPU: Nvidia GeForce RTX 2080 Ti <br>| RAM: 16GB DDR4-3800MHZ <br>| Storage: 5TB SATA SSD <br>| Monitor: MSI "32 220hz Curved flat sreen <br>| Power Supply: Corsair SF 600 80plus <br>| Headset: Logitech Extra bass <br>| Motherboard: MSI B450M Mortar <br>| Water Cooling System <br>| Mouse: Corsair 7200DPI multi functional <br>| Keyboard: Corsair mechanical keyboard</p>
+        <p style="opacity: 0; font-size: 20px">AAAAAAAAAAAA</p>
+        <br>
+        <hr>
+        <br>
+        <p>
+        <p style="font-family: Freestyle script; font-size: 120px;">But she is my ultimate goal and to acomplish my studies and having a decent job</p>
+    </p>
+    <hr>
+    <div style="font-family: lato; font-size: 35px;text-align: justify;">
+    <div style="float: left;">Copyright &copy; 2019 ROWEL ALVERO</div>
+       <div style="float: right;">&trade; ROWELL</div>
+   </div>
+</div>
+</div>
+
+<div id="mySidenav" class="sidenav" style="font-family: Europhonic">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+	<a href="vero.jpg" style="font-size: 70px" align="center"><img src="vero.jpg" width="150"><br>Rowel Alvero</a>
+	<a href="#">About</a>
+	<a href="#">Services</a>
+	<a href="#">Clients</a>
+	<a href="Automated resume.bat">Resume Generator</a>
+</div>
+</div>
+
+<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+	document.getElementById("defaultOpen").click();
+
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.body.style.backgroundColor= "rgba(0,0,0,0.4)";
+	}
+        document.getElementById("defaultOpen").click();
+    function openNav() {
+    	document.getElementById("mySidenav").style.width = "550px";
+    	document.getElementById("main").style.marginLeft = "550px";
+    }
+    function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
+</body>
+</html>
